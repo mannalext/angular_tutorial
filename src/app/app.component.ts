@@ -94,6 +94,7 @@ export class AppComponent {
   selectedHero: Hero;
   heroes = HEROES;
 
+  /**test commit */
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
   }
