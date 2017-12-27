@@ -78,7 +78,8 @@ export class HeroesComponent implements OnInit {
 
   // this is the change necessary as a result of turning the function in hero.service into a Promise
   getHeroes(): void {
-    this.heroService.getHeroes().then(heroes => this.heroes = heroes);
+    this.heroService.getHeroes()
+        .subscribe(heroes => this.heroes = heroes);
   }
 
   ngOnInit(): void {
