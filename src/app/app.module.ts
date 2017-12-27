@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 import { AppComponent } from './app.component';
 import { HeroDetailComponent } from './hero-detail.component';
 import { MessagesComponent } from './messages/messages.component';
+import { MessageService } from './message.service';
 
 @NgModule({
   imports: [
@@ -19,7 +20,7 @@ import { MessagesComponent } from './messages/messages.component';
     HeroesComponent,
     MessagesComponent
   ],
-  providers: [HeroService],
+  providers: [HeroService, MessageService],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
