@@ -8,11 +8,13 @@ import { AppComponent } from './app.component';
 import { HeroDetailComponent } from './hero-detail.component';
 import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   imports: [
     BrowserModule,
-    FormsModule // <-- import the FormsModule before binding with [(ngModel)]
+    FormsModule,
+    AppRoutingModule // <-- import the FormsModule before binding with [(ngModel)]
   ],
   declarations: [
     AppComponent,
