@@ -4,7 +4,7 @@ import { Hero } from './hero';
 
 @Component({
   selector: 'app-heroes',
-  templateUrl: './app.component.html',
+  templateUrl: './heroes.component.html',
   styles: [`
   .selected {
     background-color: #CFD8DC !important;
